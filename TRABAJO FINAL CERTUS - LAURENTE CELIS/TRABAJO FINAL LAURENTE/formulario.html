@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta   charset="utf-8">
+    <title>Registros de Nuevos Clientes</title>
+    <link rel="stylesheet" href="estilosform.css">
+</head>
+<body>
+
+    <div class="titulo">
+        <h1 >Registro de Nuevo Cliente</h1>
+    </div>
+
+    <div id="formulario">
+         <form>
+            <table>
+
+            <!-- INFORMACION PERSONAL -->
+           
+             <tr>
+                <td>
+                    <div id="informacionpersonal">
+                        <h2 >Informacion Personal</h2>
+                        <label for="nombres" class="infoperso">Nombres</label>
+                        <input type="text" name="usuario" id="nombres" placeholder="Nombre de Usuario">
+                        <br>
+                        <!-- <label for="password">Contraseña</label> -->
+                         <!-- <input type="password" name="password" id="password" placeholder="Contraseña"> -->
+                        <label for="apellidos" class="infoperso">Apellidos Completos</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos"><br>
+                        <label for="tipodedocumento" class="infoperso">Seleccione tipo de documento</label>
+                        <select name="tipodedocumento" id="tipodedocumento" >
+                        <option>Dni</option>
+                        <option>Pasaporte</option>
+                        <option>Carnet de extranjeria</option>
+                        </select>
+                        <br>
+                        <label for="DNI/CE/PASAPORTE" class="infoperso">DNI/CE/PASAPORTE</label>
+                        <input type="number" name="DNI/CE/PASAPORTE" id="DNI/CE/PASAPORTE" maxlength="8"> 
+                        <br>
+                    </div>
+                </td>
+    
+        
+          <!-- INFORMACION DE INICIO DE SESION -->
+                <td>
+                    <div id="iniciosesion">
+         
+                        <h2 class="sesion">Informacion de inicio de sesion</h2>
+                        <label for="correo"class="infoseso">Correo electronico</label>
+                        <input type="email" name="correo" id="correo" placeholder="Ingrese correo electronico"><br>
+                        <label for="password" class="infoseso">Contraseña</label>
+                        <input type="password" name="password" id="password" placeholder="Contraseña"><br>
+                        <label for="valuecontraseña" class="infoseso">Confirmar Contraseña</label>
+                        <input type="password" name="password" id="valuecontraseña" placeholder="confirmar contraseña" ><br>
+                    
+                    <div id="boton">
+                        <input type="submit" value="Crear una cuenta" class="crear">
+                    </div>
+                    </div>
+                </td>
+       
+            </tr>
+    
+    
+            
+            
+        </form>
+    
+            </table>
+    </div>
+
+</body>
+<footer><input type="checkbox" id="Confirmaciondedatos" name="confirmaciondedatos">
+    <label for="Confirmaciondedatos">Al utilizar este formulario, acepta que este sitio web almacene y maneje sus datos. Así también, haber leído y aceptado los <a href="https://www.google.com/?hl=es" target="_blank">Terminos y Condiciones.</a> </label></footer>
+
+</html>

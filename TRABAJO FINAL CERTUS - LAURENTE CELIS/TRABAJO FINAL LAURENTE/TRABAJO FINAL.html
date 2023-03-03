@@ -1,0 +1,290 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catalogo Primavera - 3Hash</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="estilosform.css">
+    <link rel="stylesheet" href="estilos.css">
+  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body onload="primeraFuncion()">
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/932910224" target="_blank">
+        <img id="whatsapp" src="descarga.jfif">
+    </a>
+
+    <!-- Encabezado -->
+    <div id="Encabezado">
+        <div class="title-site">
+            <h1>Celulares Xiaomi</h1><br>
+            <img src="images/portada 3.jpg">
+            
+        </div>
+        <p>Precios validos para productos entre 01.03.2023 — 31.05.2023</p>
+    </div>
+
+    <!-- Menú de opciones -->
+    <p>
+
+        <!-- Registrar usuario -->
+        <div id="formulario"><br>
+            <p> <a class="btn btn-success btn-lg" href="formulario.html" target="_blank">Registrese para ser nuevo cliente</a>
+        
+        <!-- Ver carrito de compra -->
+        <a class="btn btn-success btn-lg" onclick="actualizarLista()" href="#" data-bs-toggle="modal" data-bs-target="#carritoCompra">
+            Ir al carrito
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+        </a>
+
+        <!-- Modal carrito de compra-->
+        <div class="modal fade" id="carritoCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compra</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="listaCarrito" class="modal-body">
+                        El carrito está vacio.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Realizar la compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </p>
+
+    <!-- Productos -->
+    <div id="Catalogo" class="container">
+
+        <div class="row">
+
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Redmi Note 10</h3>
+                <img src="https://i.blogs.es/3a3421/xiaomi-redmi-note-10-0/1024_2000.jpeg" width="300px"
+                height="200px"><br>
+                <p><span class="oferta">$/ 220.00</span> - 50%</p>
+                <p class="precio">$/ 109.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+                <a href="https://www.xataka.com/moviles/xiaomi-redmi-note-10-xiaomi-redmi-note-10-5g-caracteristicas-precio-ficha-tecnica"
+                    target="_blank">
+                    Ver referencia y especificaciones
+                </a> <br>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Mi 11</h3>
+                <img src="https://i.blogs.es/e07109/01-xiaomi-mi-11-trasera-02/1366_2000.jpg" width="300px"
+                height="200px">
+            <br>
+                <p><span class="oferta">$/ 1150.00</span> - 30%</p>
+                <p class="precio">$/ 769.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+                <a href="https://www.xataka.com/analisis/xiaomi-mi-11-analisis-caracteristicas-precio-especificaciones"
+                    target="_blank"> Ver referencia y especificaciones
+                </a> <br>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Mi 12T Pro</h3>
+                <img src="https://i.blogs.es/255f1d/01-xiaomi-12t-pro-trasera-01/1366_2000.jpg" width="300px"
+                height="200px">
+            <br>
+                <p><span class="oferta">$/ 190.00</span> - 47%</p>
+                <p class="precio">$/ 99.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+                <a href="https://www.xataka.com/analisis/xiaomi-12t-pro-analisis-caracteristicas-precio-especificaciones"
+                    target="_blank">
+                    Ver referencia y especificaciones
+                </a><br>
+            </div>
+
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Mi 10T</h3>
+                <img src="https://i.blogs.es/007e44/xiaomi-mi-10t-01-trasera-03/1366_2000.jpg" width="300px"
+                height="200px">
+            <br>
+                <p><span class="oferta">$/ 220.00</span> - 50%</p>
+                <p class="precio">$/ 109.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+                <a href="https://www.xataka.com/analisis/xiaomi-mi-10t-analisis-caracteristicas-precio-especificaciones"
+                    target="_blank">
+                    Ver referencia y especificaciones
+                </a><br>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Mi 13</h3>
+                <img src="https://i.blogs.es/622de1/xiaomi-13-pro/1366_2000.jpg" width="300px" height="200px">
+                <br>
+                <p><span class="oferta">$/ 1150.00</span> - 30%</p>
+                <p class="precio">$/ 769.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+                <a href="https://www.xataka.com/moviles/xiaomi-13-xiaomi-13-pro-caracteristicas-precio-ficha-tecnica"
+                    target="_blank">
+                    Ver referencia y especificaciones
+                </a><br>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Mi 9T</h3>
+                <img src="https://i.blogs.es/f03677/captura-de-pantalla-2019-06-17-a-las-14.02.12/1366_2000.png"
+                width="300px" height="200px">
+            <br>
+                <p><span class="oferta">$/ 190.00</span> - 47%</p>
+                <p class="precio">$/ 99.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+                <a href="https://www.xataka.com/analisis/xiaomi-mi-9t-analisis-caracteristicas-precio-especificaciones"
+                    target="_blank">
+                    Ver referencia y especificaciones
+                </a><br>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Mi 11T</h3>
+                <img src="https://i.blogs.es/ee061e/xiaomi-11t-01-trasera-01/1024_2000.jpg" width="300px"
+                height="200px">
+            <br>
+                <p><span class="oferta">$/ 220.00</span> - 50%</p>
+                <p class="precio">$/ 109.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+                <a href="https://www.xataka.com/analisis/xiaomi-11t-analisis-caracteristicas-precio-especificaciones"
+                    target="_blank">
+                    Ver referencia y especificaciones
+                </a><br>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Mi 11T Pro</h3>
+                <img src="https://i.blogs.es/fac3e2/captura-de-pantalla-2021-09-30-a-las-18.03.58/1024_2000.png"
+                width="300px" height="200px">
+            <br>
+                <p><span class="oferta">$/ 1150.00</span> - 30%</p>
+                <p class="precio">$/ 769.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+                <a href="https://www.xataka.com/analisis/xiaomi-11t-pro-analisis-caracteristicas-precio-especificaciones"
+                    target="_blank">
+                    Ver referencia y especificaciones
+                </a><br>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Mi 12 Pro</h3>
+                <img src="https://i.blogs.es/df2461/captura-de-pantalla-2021-12-28-a-las-14.09.21/1024_2000.jpeg"
+                width="300px" height="200px">
+            <br>
+                <p><span class="oferta">S/ 1150.00</span> - 30%</p>
+                <p class="precio">S/ 769.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+                <a href="https://www.xataka.com/moviles/xiaomi-12-pro-caracteristicas-precio-ficha-tecnica"
+                    target="_blank">
+                    Ver referencia y especificaciones
+                </a><br>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Redmi Note 12</h3>
+                <img src="https://i.blogs.es/22a45d/captura-de-pantalla-2022-10-27-a-las-13.17.18-p.-m./1366_2000.png"
+                width="300px" height="200px">
+                <p><span class="oferta">$/ 190.00</span> - 47%</p>
+                <p class="precio">$/ 99.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+                <a href="https://www.xataka.com/moviles/xiaomi-redmi-note-12-pro-redmi-note-12-pro-plus-redmi-note-12-caracteristicas-precio-ficha-tecnica"
+                    target="_blank">
+                    Ver referencia y especificaciones
+                </a><br>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Redmi Note 11</h3>
+                <img src="https://i.blogs.es/c097ae/redmi-note-11-5/1366_2000.jpg" width="300px" height="200px">
+                <p><span class="oferta">$/ 220.00</span> - 50%</p>
+                <p class="precio">$/ 109.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+                <a href="https://www.xataka.com/analisis/xiaomi-redmi-note-11-analisis-que-no-arriesga-tambien-puede-ganar"
+                    target="_blank">
+                    Ver referencia y especificaciones
+                </a><br>
+            </div>
+            <div class="producto col-12 col-sm-6 col-md-4 col-lg-3">
+                <h3>Redmi note 11 Pro</h3>
+                <img src="https://i.blogs.es/f8b655/redmi-note-11-pro-16/1366_2000.jpg" width="300px" height="200px">
+                <p><span class="oferta">$/ 1150.00</span> - 30%</p>
+                <p class="precio">$/ 769.00</p>
+                <p><a class="btn btn-primary" href="#" onclick="addCart(this)"><span>🛒</span> Agregar a carrito</a></p>
+                <a href="https://www.xataka.com/analisis/xiaomi-redmi-note-11-pro-5g-analisis-caracteristicas-precio-especificaciones"
+                    target="_blank">
+                    Ver referencia y especificaciones
+                </a><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div id="Pie">
+        <footer class="pie">Made by Jairo Laurente &copy;JairoLC 2023. All rights reserved </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalEntrada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img class="mx-auto d-block" src="images/modal-ofertas.webp">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+
+        // Crear una cookie
+        var ObjetosSeleccionados = [];
+
+        // Función para el modal de promoción
+        function primeraFuncion() {
+            const modalEntrada = new bootstrap.Modal("#modalEntrada");
+            modalEntrada.show();
+        }
+
+        // Función para los botones añadir carrito
+        function addCart(objeto){
+            // Obtener el elemento donde se encuetra
+            var contenedor = objeto.parentElement.parentElement;
+            // Datos del producto
+            var nombre = contenedor.getElementsByTagName("h3")[0];
+            var precio = contenedor.getElementsByTagName("p")[0];
+            var precioFinal = contenedor.getElementsByTagName("p")[1];
+            // Crear objeto
+            var producto = {
+                "nombre" : nombre.innerText,
+                "precio" : precio.innerText,
+                "precioFinal" : precioFinal.innerText
+            }
+            // Añadir al array de objetos
+            ObjetosSeleccionados.push(producto);
+        }
+
+        // Función actualizar lista
+        function actualizarLista(){
+            var lista = document.getElementById("listaCarrito");
+            // Crear el HTML
+            var texto = "";
+            ObjetosSeleccionados.forEach(element => {
+                texto = texto + "<div class='productoLista'>";
+                texto = texto + "<p>"+element.nombre+"</p>";
+                texto = texto + "<p>"+element.precio+"</p>";
+                texto = texto + "<p>"+element.precioFinal+"</p>";
+                texto = texto + "</div>";
+            });
+            lista.innerHTML = texto;
+        }
+    </script>
+</body>
